@@ -1,10 +1,13 @@
-import { useState } from "react";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar"; 
+import TableBuku from "./Components/TableBuku";
 
 function App() {
   return (
-   <Navbar />
-  );
+    <>
+      <Navbar />
+      <TableBuku />
+    </>
+  );  
 }
 
 export default App;
