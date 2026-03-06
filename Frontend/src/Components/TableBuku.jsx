@@ -35,9 +35,6 @@ const Buku = [
 const TableBuku = () => {
   return (
     <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 mt-8 mb-8 max-w-6xl mx-auto">
-        <div className="flex justify-start mt-4 mb-4">
-            <button className="btn btn-secondary">Tambah Buku</button>
-        </div>
       <table className="table">
         {/* head */}
         <thead>
