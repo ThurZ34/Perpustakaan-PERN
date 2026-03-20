@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -12,16 +12,16 @@ const Navbar = () => {
           <ul
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><Link to="/">Manajemen Buku</Link></li>
-            <li><Link to="/halaman-baru">Halaman Baru</Link></li>
+            <li><NavLink to="/" end className={({ isActive }) => isActive ? "active font-bold text-primary" : ""}>Manajemen Buku</NavLink></li>
+            <li><NavLink to="/halaman-baru" className={({ isActive }) => isActive ? "active font-bold text-primary" : ""}>Halaman Baru</NavLink></li>
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl">Perpustakaan</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><Link to="/">Manajemen Buku</Link></li>
-          <li><Link to="/halaman-baru">Halaman Baru</Link></li>
+          <li><NavLink to="/" end className={({ isActive }) => isActive ? "active font-bold" : ""}>Manajemen Buku</NavLink></li>
+          <li><NavLink to="/halaman-baru" className={({ isActive }) => isActive ? "active font-bold" : ""}>Halaman Baru</NavLink></li>
         </ul>
       </div>
       <div className="navbar-end">

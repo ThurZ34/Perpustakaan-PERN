@@ -6,10 +6,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Route '/' (Home) diarahkan ke halaman Buku */}
         <Route path="/" element={<Buku />} />
-        
-        {/* Route '/halaman-baru' diarahkan ke komponen PageBaru */}
         <Route path="/halaman-baru" element={<PageBaru />} />
       </Routes>
     </Router>
